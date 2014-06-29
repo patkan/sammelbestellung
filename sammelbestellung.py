@@ -462,7 +462,7 @@ class PriceFetcherPollin(PriceFetcher):
             partNr=removeChars(partNr," ")
             s += "%d\t\t%s\t" % (p.count, partNr)
         
-        return ["#!/bin/sh\n" + xdotool_format(s), ".type.sh"]
+        return ["#!/bin/sh\n#some time to switch to browser\nsleep 5\n" + xdotool_format(s), ".type.sh"]
 
 shops = [ PriceFetcherReichelt, PriceFetcherRS, PriceFetcherPollin ]
 
