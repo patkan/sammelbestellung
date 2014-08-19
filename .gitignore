@@ -40,3 +40,10 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+.directory
+
+# files that start with a year number
+201*
+202*
+203*
